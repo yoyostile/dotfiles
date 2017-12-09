@@ -39,7 +39,7 @@ brew install gnupg
 # Install more recent versions of some macOS tools.
 brew install macvim --with-override-system-vi
 brew install grep
-brew install openssh
+# brew install openssh
 brew install tmux
 
 # # Install some CTF tools; see https://github.com/ctfs/write-ups.
