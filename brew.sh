@@ -96,6 +96,7 @@ brew services start crisidev/chunkwm/chunkwm
 brew install curl
 brew install docker-machine
 brew install docker-machine-driver-scaleway
+brew install fasd
 brew install ffmpeg
 brew install git
 brew install hub
