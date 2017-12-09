@@ -1,0 +1,15 @@
+# This is Git's per-user configuration file.
+[user]
+	name = Johannes Heck 
+	email = yoyostile@gmail.com
+  signingkey = C235E0E4
+[core]
+	excludesfile = ~/.gitignore_global
+	editor = /usr/local/bin/vim
+[push]
+	default = simple
+[commit]
+	gpgsign = true
+	template = /Users/yoyostile/.stCommitMsg
+[hub]
+	host = git.broadsoft.com
