@@ -4,7 +4,7 @@ alias spring='nocorrect spring'
 alias dokku='$HOME/.dokku/contrib/dokku_client.sh'
 alias vlc='/Applications/VLC.app/Contents/MacOS/VLC'
 alias sourcetree='open -a SourceTree'
-alias wp='wal -i ~/Pictures/Wallpapers -o ~/.config/script/wal-set'
+alias wp='wal -i ~/Pictures/Wallpapers && ~/.config/script/wal-set'
 alias git=hub
 
 # Easier navigation: .., ..., ...., ....., ~ and -
