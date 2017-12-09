@@ -194,6 +194,3 @@
 	default = simple
 [commit]
 	gpgsign = true
-	template = /Users/yoyostile/.stCommitMsg
-[hub]
-	host = git.broadsoft.com
