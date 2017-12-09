@@ -8,11 +8,14 @@ function doIt() {
 	rsync --exclude ".git/" \
 		--exclude ".DS_Store" \
 		--exclude ".osx" \
+		--exclude ".macos" \
 		--exclude "bootstrap.sh" \
+		--exclude "brew.sh" \
+		--exclude "init" \
 		--exclude "README.md" \
 		--exclude "LICENSE-MIT.txt" \
 		-avh --no-perms . ~;
-	source ~/.zshrc;
+	/usr/bin/env zsh -c "source ~/.zshrc";
 }
 
 if [ "$1" == "--force" -o "$1" == "-f" ]; then
