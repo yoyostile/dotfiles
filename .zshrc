@@ -1,11 +1,11 @@
 ZSH=$HOME/.oh-my-zsh
 ZSH_THEME="robbyrussell"
 
-source ~/.aliases
-source ~/.exports
-source ~/.functions
-source ~/.privates
+for file in ~/.{exports,aliases,functions,extra}; do
+  [ -r "$file" ] && [ -f "$file" ] && source "$file";
+done;
 
+unset file;
 plugins=(git bundler scw rake-fast rails docker cp)
 source $ZSH/oh-my-zsh.sh
 
