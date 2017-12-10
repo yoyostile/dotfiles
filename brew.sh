@@ -129,6 +129,10 @@ brew install zsh
 brew install caskroom/cask/brew-cask
 brew cask install ubersicht
 
+git clone https://github.com/yoyostile/nerdbar.widget-1 $HOME/Library/Application\ Support/Übersicht/widgets
+
+wget -O /tmp/Playbox.widget.zip https://github.com/Pe8er/Playbox.widget/raw/master/Playbox.widget.zip && unzip /tmp/Playbox.widget.zip -d $HOME/Library/Application\ Support/Übersicht/widgets/ && rm /tmp/Playbox.widget.zip
+rm -rf $HOME/Library/Application\ Support/Übersicht/widgets/__MACOSX
 # Remove outdated versions from the cellar.
 brew cleanup
 
