@@ -126,6 +126,9 @@ brew install vnstat
 brew install watch
 brew install zsh
 
+brew install caskroom/cask/brew-cask
+brew cask install ubersicht
+
 # Remove outdated versions from the cellar.
 brew cleanup
 
