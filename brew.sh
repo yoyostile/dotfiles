@@ -147,7 +147,7 @@ brew install zsh
 
 brew cask install ubersicht
 
-git clone https://github.com/yoyostile/nerdbar.widget-1 $HOME/Library/Application\ Support/Übersicht/widgets
+git clone https://github.com/yoyostile/nerdbar.widget-1 $HOME/Library/Application\ Support/Übersicht/widgets/nerdbar.widget
 
 wget -O /tmp/Playbox.widget.zip https://github.com/Pe8er/Playbox.widget/raw/master/Playbox.widget.zip && unzip /tmp/Playbox.widget.zip -d $HOME/Library/Application\ Support/Übersicht/widgets/ && rm /tmp/Playbox.widget.zip
 rm -rf $HOME/Library/Application\ Support/Übersicht/widgets/__MACOSX
@@ -158,3 +158,4 @@ sudo pip3 install pywal
 
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 curl -L https://bit.ly/janus-bootstrap | bash
+git clone https://github.com/dylanaraps/wal.vim.git $HOME/.janus/wal
