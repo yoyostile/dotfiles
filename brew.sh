@@ -121,7 +121,7 @@ brew install zopfli
 brew install hub
 brew install gnupg
 brew install htop
-brew install imagemagick@6
+brew install imagemagick
 brew install iperf
 brew install koekeishiya/formulae/khd
 brew services start koekeishiya/formulae/khd
