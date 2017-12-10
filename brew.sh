@@ -145,7 +145,6 @@ brew install vnstat
 brew install watch
 brew install zsh
 
-brew install caskroom/cask/brew-cask
 brew cask install ubersicht
 
 git clone https://github.com/yoyostile/nerdbar.widget-1 $HOME/Library/Application\ Support/Übersicht/widgets
