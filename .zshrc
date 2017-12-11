@@ -9,4 +9,4 @@ unset file;
 plugins=(git bundler scw rake-fast rails docker cp)
 source $ZSH/oh-my-zsh.sh
 
-(wal -r &)
+(printf $(wal -r) &)
