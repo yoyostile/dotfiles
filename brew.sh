@@ -121,6 +121,7 @@ brew install zopfli
 brew install hub
 brew install gnupg
 brew install htop
+brew install icu4c
 brew install imagemagick
 brew install iperf
 brew install koekeishiya/formulae/khd
