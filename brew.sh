@@ -127,9 +127,11 @@ brew install koekeishiya/formulae/khd
 brew services start koekeishiya/formulae/khd
 brew install kubernetes-cli
 brew install kubernetes-helm
+brew install libxml2
 brew install macvim
 brew install mtr
 brew install nmap
+brew install pkg-config
 brew install python
 brew install python3
 brew install rclone
