@@ -8,4 +8,4 @@ export PATH=/usr/local/bin:/opt/local/bin:/opt/local/sbin:/usr/bin:/bin:/usr/sbi
 export PATH=$PATH:/Applications/Postgres.app/Contents/Versions/9.3/bin
 export GDFONTPATH=$GDFONTPATH:/Library/Fonts:/System/Library/Fonts
 export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
-export PKG_CONFIG_PATH="/opt/local/lib/pkgconfig:/usr/local/opt/libxml2/lib/pkgconfig:$PKG_CONFIG_PATH"
+export PKG_CONFIG_PATH="/opt/local/lib/pkgconfig:/usr/local/opt/icu4c/lib/pkgconfig:/usr/local/opt/libxml2/lib/pkgconfig:$PKG_CONFIG_PATH"
