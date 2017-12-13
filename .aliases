@@ -6,6 +6,7 @@ alias vlc='/Applications/VLC.app/Contents/MacOS/VLC'
 alias sourcetree='open -a SourceTree'
 alias wp='wal -i ~/Pictures/Wallpapers && ~/.config/script/wal-set'
 alias git=hub
+alias j='fasd_cd -d'
 
 # Easier navigation: .., ..., ...., ....., ~ and -
 alias ..="cd .."
