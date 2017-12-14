@@ -1,6 +1,6 @@
 # Johannes’ dotfiles
 
-![Screenshot of my shell prompt](https://s3.r4r3.me/random/iterm2.png)
+![Screenshot of my shell prompt](https://s3.r4r3.me/random/iterm3.png)
 
 ## Installation
 
