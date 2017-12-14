@@ -1,6 +1,6 @@
 # Johannes’ dotfiles
 
-![Screenshot of everything](https://s3.r4r3.me/random/iterm3.png)
+![Screenshot of everything](https://s3.r4r3.me/random/iterm4.png)
 
 ## Installation
 
