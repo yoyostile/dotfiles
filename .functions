@@ -51,3 +51,8 @@ fi;
 function digga() {
 	dig +nocmd "$1" any +multiline +noall +answer;
 }
+
+function up() {
+  mc cp "$1" s3/random/
+  echo "https://s3.r4r3.me/random/$1"
+}
