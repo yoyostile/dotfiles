@@ -41,7 +41,8 @@ alias update='sudo softwareupdate -i -a; brew update; brew upgrade; brew cleanup
 alias chrome='/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome'
 
 # IP addresses
-alias ip="curl ifconfig.co/ip"
+alias ip="curl https://i.r4r3.me/ip"
+alias ip6="curl https://i6.r4r3.me/ip"
 alias localip="ipconfig getifaddr en0"
 alias ips="ifconfig -a | grep -o 'inet6\? \(addr:\)\?\s\?\(\(\([0-9]\+\.\)\{3\}[0-9]\+\)\|[a-fA-F0-9:]\+\)' | awk '{ sub(/inet6? (addr:)? ?/, \"\"); print }'"
 
