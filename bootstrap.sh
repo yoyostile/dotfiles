@@ -15,7 +15,8 @@ function doIt() {
     --exclude "init" \
     --exclude "README.md" \
     --exclude "LICENSE-MIT.txt" \
-    --exlcude "Brewfile" \
+    --exclude "Brewfile" \
+    --exclude "configs" \
     -avh --no-perms . ~;
   /usr/bin/env zsh -c "source ~/.zshrc";
 }
