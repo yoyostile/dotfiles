@@ -13,16 +13,18 @@ BREW_PREFIX=$(brew --prefix)
 
 # Install GNU core utilities (those that come with macOS are outdated).
 # Don’t forget to add `$(brew --prefix coreutils)/libexec/gnubin` to `$PATH`.
-brew install coreutils
-ln -s "${BREW_PREFIX}/bin/gsha256sum" "${BREW_PREFIX}/bin/sha256sum"
+#brew install coreutils
+#ln -s "${BREW_PREFIX}/bin/gsha256sum" "${BREW_PREFIX}/bin/sha256sum"
 
 # Install some other useful utilities like `sponge`.
 # brew install moreutils
 # Install GNU `find`, `locate`, `updatedb`, and `xargs`, `g`-prefixed.
-brew install findutils
+# brew install findutils
 # Install GNU `sed`, overwriting the built-in `sed`.
-brew install gnu-sed --with-default-names
-# Install a modern version of Bash.
+# brew install gnu-sed --with-default-names
+# Install Bash 4.
+# Note: don’t forget to add `/usr/local/bin/bash` to `/etc/shells` before
+# running `chsh`.
 # brew install bash
 # brew install bash-completion2
 
@@ -33,19 +35,19 @@ brew install gnu-sed --with-default-names
 # fi;
 
 # Install `wget` with IRI support.
-brew install wget --with-iri
+# brew install wget --with-iri
 
 # Install GnuPG to enable PGP-signing commits.
-brew install gnupg
+# brew install gnupg
 
 # Install more recent versions of some macOS tools.
-brew install macvim --with-override-system-vi
-brew install grep
-brew install openssh
-brew install screen
-brew install php
-brew install gmp
-brew install tmux
+# brew install macvim --with-override-system-vi
+# brew install grep
+# brew install openssh
+# brew install screen
+# brew install php
+# brew install gmp
+# brew install tmux
 
 # # Install some CTF tools; see https://github.com/ctfs/write-ups.
 # brew install aircrack-ng
@@ -91,65 +93,66 @@ brew install tmux
 # brew install vbindiff
 # brew install zopfli
 
-brew install ansible
-brew install autoconf
-brew install automake
-brew install b2-tools
-brew install chunkwm
-ln -s ~/.chunkwm_plugins /usr/local/opt/chunkwm/share/chunkwm/plugins
-brew services start crisidev/chunkwm/chunkwm
-brew install curl
-brew install docker-machine
-brew install docker-machine-driver-scaleway
-brew install fasd
-brew install ffmpeg
-brew install git
-brew install git-lfs
-brew install gs
-brew install imagemagick --with-webp
-brew install lua
-brew install lynx
-brew install p7zip
-brew install pigz
-brew install pv
-brew install rename
-brew install rlwrap
-brew install ssh-copy-id
-brew install tree
-brew install vbindiff
-brew install zopfli
-brew install hub
-brew install gnupg
-brew install htop
-brew install icu4c
-brew install imagemagick
-brew install iperf
-brew install koekeishiya/formulae/khd
-brew services start koekeishiya/formulae/khd
-brew install kubernetes-cli
-brew install kubernetes-helm
-brew install libxml2
-brew install macvim
-brew install mtr
-brew install nmap
-brew install pkg-config
-brew install python
-brew install python3
-brew install rclone
-brew install readline
-brew install reattach-to-user-namespace
-brew install screenfetch
-brew install scw
-brew install sqlite
-brew install terraform
-brew install tldr
-brew install tmux
-brew install vnstat
-brew install watch
-brew install zsh
+# brew install ansible
+# brew install autoconf
+# brew install automake
+# brew install b2-tools
+# brew install chunkwm
+# ln -s ~/.chunkwm_plugins /usr/local/opt/chunkwm/share/chunkwm/plugins
+# brew services start crisidev/chunkwm/chunkwm
+# brew install curl
+# brew install docker-machine
+# brew install docker-machine-driver-scaleway
+# brew install fasd
+# brew install ffmpeg
+# brew install git
+# brew install git-lfs
+# brew install gs
+# brew install imagemagick --with-webp
+# brew install lua
+# brew install lynx
+# brew install p7zip
+# brew install pigz
+# brew install pv
+# brew install rename
+# brew install rlwrap
+# brew install ssh-copy-id
+# brew install tree
+# brew install vbindiff
+# brew install zopfli
+# brew install hub
+# brew install gnupg
+# brew install htop
+# brew install icu4c
+# brew install imagemagick
+# brew install iperf
+# brew install koekeishiya/formulae/khd
+# brew services start koekeishiya/formulae/khd
+# brew install kubernetes-cli
+# brew install kubernetes-helm
+# brew install libxml2
+# brew install macvim
+# brew install mtr
+# brew install nmap
+# brew install pkg-config
+# brew install python
+# brew install python3
+# brew install rclone
+# brew install readline
+# brew install reattach-to-user-namespace
+# brew install screenfetch
+# brew install scw
+# brew install sqlite
+# brew install terraform
+# brew install tldr
+# brew install tmux
+# brew install vnstat
+# brew install watch
+# brew install zsh
 
-brew cask install ubersicht
+# brew cask install ubersicht
 
+ln -s /usr/local/opt/chunkwm/share/chunkwm/plugins ~/.chunkwm_plugins
 git clone https://github.com/yoyostile/nerdbar.widget-1 $HOME/Library/Application\ Support/Übersicht/widgets/nerdbar.widget
 
 wget -O /tmp/Playbox.widget.zip https://github.com/Pe8er/Playbox.widget/raw/master/Playbox.widget.zip && unzip /tmp/Playbox.widget.zip -d $HOME/Library/Application\ Support/Übersicht/widgets/ && rm /tmp/Playbox.widget.zip
