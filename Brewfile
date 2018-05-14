@@ -54,6 +54,7 @@ brew "vnstat", restart_service: true
 brew "watch"
 brew "wget"
 brew "zsh"
+brew "rsync"
 brew "crisidev/chunkwm/chunkwm", args: ["with-purify"]
 brew "koekeishiya/formulae/khd"
 brew "minio/stable/mc", link: false
