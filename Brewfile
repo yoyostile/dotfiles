@@ -16,6 +16,7 @@ brew "automake"
 brew "gettext"
 brew "coreutils"
 brew "curl"
+brew "dnsmasq"
 brew "faas-cli"
 brew "fasd"
 brew "ffmpeg"
@@ -54,10 +55,10 @@ brew "vnstat", restart_service: true
 brew "watch"
 brew "wget"
 brew "zsh"
+brew "yarn"
 brew "rsync"
 brew "crisidev/chunkwm/chunkwm", args: ["with-purify"]
 brew "koekeishiya/formulae/khd"
-brew "minio/stable/mc", link: false
 brew "scaleway/scaleway/docker-machine-driver-scaleway", args: ["HEAD"]
 cask "google-cloud-sdk"
 cask "keybase"
