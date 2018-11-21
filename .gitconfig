@@ -194,3 +194,7 @@
 	default = simple
 [commit]
 	gpgsign = true
+  signingkey = 7D09C79892EB3A01F569C5BF29284C5DC235E0E4
+[user]
+  name = Johannes Heck
+  email = yoyostile@gmail.com
