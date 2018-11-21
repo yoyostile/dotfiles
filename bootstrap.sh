@@ -8,6 +8,8 @@ git pull origin master;
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)";
 brew install python;
 sudo pip3 install pywal;
+brew bundle;
+bash ./.macos;
 
 function doIt() {
   rsync --exclude ".git/" \

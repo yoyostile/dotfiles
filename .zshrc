@@ -9,4 +9,4 @@ unset file;
 plugins=(git bundler scw rake-fast rails docker cp fasd)
 source $ZSH/oh-my-zsh.sh
 
-(printf $(wal -r) &)
+(printf $(cat /Users/yoyostile/.cache/wal/sequences) &)
