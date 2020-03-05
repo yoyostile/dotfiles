@@ -56,3 +56,24 @@ function up() {
   mc cp "$1" s3/random/
   echo "https://s3.r4r3.me/random/$1"
 }
+
+nvm() {
+    unset -f nvm
+    export NVM_DIR=~/.nvm
+    [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
+    nvm "$@"
+}
+
+node() {
+    unset -f node
+    export NVM_DIR=~/.nvm
+    [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
+    node "$@"
+}
+
+npm() {
+    unset -f npm
+    export NVM_DIR=~/.nvm
+    [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
+    npm "$@"
+}
