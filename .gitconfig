@@ -190,7 +190,14 @@
 [core]
 	excludesfile = ~/.gitignore_global
 	editor = /usr/local/bin/vim
-[push]
-	default = simple
 [commit]
 	gpgsign = true
+[user]
+	signingkey = C235E0E4
+	name = Johannes Heck
+	email = yoyostile@gmail.com
+[hub]
+	host = wwwin-github.cisco.com
+[pull]
+	default = simple
+	rebase = true
