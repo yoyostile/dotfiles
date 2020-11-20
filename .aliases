@@ -4,7 +4,7 @@ alias spring='nocorrect spring'
 alias dokku='$HOME/.dokku/contrib/dokku_client.sh'
 alias vlc='/Applications/VLC.app/Contents/MacOS/VLC'
 alias sourcetree='open -a SourceTree'
-alias wp='wal -i /Users/joheck/Library/Mobile\ Documents/com~apple~CloudDocs/Bilder/Wallpapers && ~/.config/script/wal-set'
+alias wp='wal -i ~/Library/Mobile\ Documents/com~apple~CloudDocs/Bilder/Wallpapers && ~/.config/script/wal-set'
 alias git=hub
 alias j='fasd_cd -d'
 
@@ -82,3 +82,5 @@ alias reload="exec ${SHELL} -l"
 
 # Print each PATH entry on a separate line
 alias path='echo -e ${PATH//:/\\n}'
+
+alias pass='date +%s | sha256sum | base64 | head -c 32 ; echo'
