@@ -96,3 +96,5 @@ alias reload="exec ${SHELL} -l"
 alias path='echo -e ${PATH//:/\\n}'
 
 alias pass='date +%s | sha256sum | base64 | head -c 32 ; echo'
+
+alias ibrew='arch -x86_64 /usr/local/bin/brew'
