@@ -6829,7 +6829,7 @@
 			<key>Non-ASCII Anti Aliased</key>
 			<true/>
 			<key>Normal Font</key>
-			<string>SourceCodePro-Regular 15</string>
+			<string>SauceCodeProNerdFontComplete-Regular 15</string>
 			<key>Only The Default BG Color Uses Transparency</key>
 			<false/>
 			<key>Option Key Sends</key>
@@ -7794,9 +7794,9 @@
 	<key>TabViewType</key>
 	<integer>1</integer>
 	<key>TerminalMargin</key>
-	<integer>30</integer>
+	<integer>25</integer>
 	<key>TerminalVMargin</key>
-	<integer>30</integer>
+	<integer>25</integer>
 	<key>ThreeFingerEmulates</key>
 	<false/>
 	<key>TmuxDashboardLimit</key>
@@ -7826,7 +7826,7 @@
 	<key>WordCharacters</key>
 	<string>                    </string>
 	<key>disableMetalWhenUnplugged</key>
-	<false/>
+	<true/>
 	<key>findIgnoreCase_iTerm</key>
 	<true/>
 	<key>findMode_iTerm</key>
