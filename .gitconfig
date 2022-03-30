@@ -189,9 +189,11 @@
   signingkey = C235E0E4
 [core]
 	excludesfile = ~/.gitignore_global
-	editor = /usr/local/bin/vim
+	editor = /opt/homebrew/bin/vim
+  pager = delta
 [commit]
 	gpgsign = true
+	template = /Users/jheck/.stCommitMsg
 [user]
 	signingkey = C235E0E4
 	name = Johannes Heck
@@ -201,3 +203,22 @@
 [pull]
 	default = simple
 	rebase = true
+[difftool "sourcetree"]
+	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+	path =
+[mergetool "sourcetree"]
+	cmd = /Applications/Sourcetree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	trustExitCode = true
+[gpg]
+	program = gpg2
+[credential]
+	helper = store
+[init]
+	defaultBranch = main
+[interactive]
+  diffFilter = delta --color-only
+[diff]
+  colorMoved = default
+[delta]
+  side-by-side = true
+  line-numbers = true

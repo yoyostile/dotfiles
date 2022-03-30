@@ -1,7 +1,6 @@
 #!/usr/bin/env zsh
 
 alias spring='nocorrect spring'
-alias dokku='$HOME/.dokku/contrib/dokku_client.sh'
 alias vlc='/Applications/VLC.app/Contents/MacOS/VLC'
 alias sourcetree='open -a SourceTree'
 alias wp='wal -i ~/Library/Mobile\ Documents/com~apple~CloudDocs/Bilder/Wallpapers && ~/.config/script/wal-set'
@@ -97,4 +96,14 @@ alias path='echo -e ${PATH//:/\\n}'
 
 alias pass='date +%s | sha256sum | base64 | head -c 32 ; echo'
 
-alias ibrew='arch -x86_64 /usr/local/bin/brew'
+alias brew='arch -x86_64 /usr/local/bin/brew'
+alias abrew='/opt/homebrew/bin/brew'
+
+alias cat='bat --style=plain'
+alias l='exa'
+alias la='exa -a'
+alias ll='exa -lah'
+alias ls='exa --color=auto'
+
+alias plsql='(){ echo "$1" | mysql -D app_placetel ;}'
+alias lg='lazygit'
