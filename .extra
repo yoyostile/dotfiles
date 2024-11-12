@@ -3,9 +3,8 @@
 GIT_AUTHOR_NAME="Johannes Heck"
 GIT_COMMITTER_NAME="$GIT_AUTHOR_NAME"
 git config --global user.name "$GIT_AUTHOR_NAME"
-GIT_AUTHOR_EMAIL="yoyostile@gmail.com"
+GIT_AUTHOR_EMAIL="jheck@me.com"
 GIT_COMMITTER_EMAIL="$GIT_AUTHOR_EMAIL"
 git config --global user.email "$GIT_AUTHOR_EMAIL"
-GIT_SIGNINGKEY=C235E0E4
+GIT_SIGNINGKEY="ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIGA6mJ5U3GlaON6hlpA5lz9BStGoZfV1W7EiIfYHBvw7"
 git config --global user.signingkey "$GIT_SIGNINGKEY"
-git config --global hub.host "wwwin-github.cisco.com"
