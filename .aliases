@@ -96,8 +96,8 @@ alias path='echo -e ${PATH//:/\\n}'
 
 alias pass='date +%s | sha256sum | base64 | head -c 32 ; echo'
 
-alias brew='arch -x86_64 /usr/local/bin/brew'
-alias abrew='/opt/homebrew/bin/brew'
+alias ibrew='arch -x86_64 /usr/local/bin/brew'
+alias brew='/opt/homebrew/bin/brew'
 
 alias cat='bat --style=plain'
 alias exa='eza'
@@ -108,3 +108,5 @@ alias ls='exa --color=auto'
 
 alias plsql='(){ echo "$1" | mysql -D app_placetel ;}'
 alias lg='lazygit'
+alias k='kubectl'
+alias docker='podman'

@@ -1,38 +1,45 @@
 {
 	"always_show_minimap_viewport": true,
+	"binary_file_patterns":
+	[
+		"node_modules/**",
+		"log/**",
+		"coverage/**",
+		"public/packs/**",
+		"public/packs-test/**",
+		"tmp/**",
+		".terraform"
+	],
 	"bold_folder_labels": true,
 	"caret_extra_bottom": 1,
 	"caret_extra_top": 1,
 	"caret_extra_width": 1,
 	"caret_style": "blink",
-	"color_scheme": "Packages/User/SublimeLinter/base16-wal (SL).tmTheme",
+	"color_scheme": "ayu-mirage.sublime-color-scheme",
+  "debug": true,
 	"ensure_newline_at_eof_on_save": true,
 	"fade_fold_buttons": false,
-	"font_face": "Hack",
+	"font_face": "FiraCode Nerd Font",
 	"font_options":
 	[
-		"subpixel_antialias"
+		"subpixel_antialias",
 	],
-	"font_size": 13,
+	"font_size": 15,
+	"gpu_window_buffer": true,
+	"hardware_acceleration": "opengl",
 	"highlight_line": true,
 	"highlight_modified_tabs": false,
 	"ignored_packages":
 	[
-		"Boxy Theme Addon - Mono File Icons",
-		"CSS"
+		"CSS",
 	],
 	"indent_guide_options":
 	[
 		"draw_normal",
 		"draw_active"
 	],
-	"line_padding_bottom": 2,
-	"line_padding_top": 2,
-	"material_theme_accent_graphite": true,
-	"material_theme_arrow_folders": true,
-	"material_theme_compact_sidebar": true,
-	"material_theme_small_statusbar": true,
-	"material_theme_small_tab": true,
+	"line_padding_bottom": 1,
+	"line_padding_top": 1,
 	"overlay_scroll_bars": "enabled",
 	"rubocop":
 	{
@@ -40,13 +47,12 @@
 		[
 			"--config",
 			"/Users/yoyostile/Development/.rubocop.yml"
-		]
+		],
 	},
 	"save_on_focus_lost": true,
 	"show_encoding": true,
 	"show_line_endings": true,
 	"tab_size": 2,
-	"theme": "DA.sublime-theme",
 	"theme_agila_camouflage": true,
 	"theme_agila_compact_sidebar": true,
 	"theme_agila_compact_tab": true,
@@ -54,5 +60,11 @@
 	"theme_agila_sidebar_light_icons": true,
 	"theme_agila_sidebar_mini": true,
 	"translate_tabs_to_spaces": true,
-	"trim_trailing_white_space_on_save": true
+	"trim_trailing_white_space_on_save": true,
+	"update_check": true,
+	"theme": "ayu-mirage.sublime-theme",
+	"ui_separator": true,
+	"ui_native_titlebar": false,
+	"ui_wide_scrollbars": false,
+	"index_files": true,
 }

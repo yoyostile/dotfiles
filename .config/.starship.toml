@@ -1,0 +1,105 @@
+add_newline = false
+
+format = """
+$directory\
+$git_branch\
+$git_status\
+$character
+"""
+
+right_format = """
+$username\
+$hostname\
+$shlvl\
+$singularity\
+$vcsh\
+$git_commit\
+$git_state\
+$git_metrics\
+$hg_branch\
+$docker_context\
+$package\
+$cmake\
+$cobol\
+$dart\
+$deno\
+$dotnet\
+$elixir\
+$elm\
+$erlang\
+$golang\
+$helm\
+$java\
+$julia\
+$kotlin\
+$lua\
+$nim\
+$nodejs\
+$ocaml\
+$perl\
+$php\
+$pulumi\
+$purescript\
+$python\
+$rlang\
+$red\
+$ruby\
+$rust\
+$scala\
+$swift\
+$terraform\
+$vlang\
+$vagrant\
+$zig\
+$nix_shell\
+$conda\
+$memory_usage\
+$aws\
+$gcloud\
+$kubernetes\
+$openstack\
+$env_var\
+$crystal\
+$custom\
+$cmd_duration\
+$line_break\
+$jobs\
+$battery\
+$time\
+$status\
+$shell
+"""
+
+[aws]
+disabled = true
+
+[character]
+success_symbol = "[➜](bold green)"
+error_symbol = "[➜](bold red)"
+
+[gcloud]
+format = 'on [$symbol$project]($style) '
+disabled = true
+
+[git_status]
+format = '([\($all_status\)]($style) )'
+
+[git_branch]
+symbol = '🌱 '
+
+[kubernetes]
+format = 'on [⛵ $context](dimmed green) '
+disabled = false
+contexts = [
+  { context_pattern = "gke_.*_(?P<cluster>[\\w-]+)", context_alias = "gke-$cluster" },
+  { context_pattern = "kubernetes-admin.*@(?P<cluster>[\\w-]+)", context_alias = "$cluster" }
+]
+
+[nodejs]
+disabled = true
+
+[line_break]
+disabled = true
+
+[time]
+disabled = false

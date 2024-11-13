@@ -4,12 +4,14 @@ cd "$(dirname "${BASH_SOURCE}")";
 
 git pull origin main;
 
-#/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)";
-#sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)";
-#brew install python;
-#sudo pip3 install pywal;
-#brew bundle;
-#bash ./.macos;
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+brew bundle;
+bash ./.macos;
+
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+curl -L https://bit.ly/janus-bootstrap | bash
+
+ln -s $(pwd)/.config/.starship.toml ~/.config/starship.toml
 
 function doIt() {
   rsync --exclude ".git/" \
