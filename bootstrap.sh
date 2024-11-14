@@ -4,12 +4,12 @@ cd "$(dirname "${BASH_SOURCE}")";
 
 git pull origin main;
 
-/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
-brew bundle;
-bash ./.macos;
+#/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+#brew bundle;
+#bash ./.macos;
 
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
-curl -L https://bit.ly/janus-bootstrap | bash
+#sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+#curl -L https://bit.ly/janus-bootstrap | bash
 
 ln -s $(pwd)/.config/.starship.toml ~/.config/starship.toml
 
